@@ -164,7 +164,7 @@ input, select {
   grid-row: 1 / -1;
   -ms-grid-rows: 1fr 1.3fr 1.7fr;
       grid-template-rows: 1fr 1.3fr 1.7fr;
-  background-image: url(/intermediate_HTML_CSS/signUp_HTML_CSS_P1/assets/dota2map.jpeg);
+  background-image: url(../assets/dota2map.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
 }
