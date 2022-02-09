@@ -1,0 +1,307 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+//-------------------------------------------------------
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+/* font-family: 'Amatic SC', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+
+
+.main-grid{
+    display: grid;
+    grid-template: 1fr / 1fr 2fr;
+    width: 100vw;
+    height: 100vh;
+    color: whitesmoke;
+    
+    
+
+    .left{
+        grid-row: 1 / -1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url(https://www.wallpapertip.com/wmimgs/46-463094_dota-2-wallpaper-for-mobile-dota-2-phone.jpg);
+        background-size:cover;
+        background-repeat: no-repeat;
+        font-weight: bold;
+        font-size: 3.5em;
+        color: white;
+        text-shadow: rgb(31, 26, 26) 3px 3px 4px;
+        
+
+        span{
+            color: rgb(168, 16, 16);
+        }
+
+        .social{
+
+            display: flex;
+            gap: 2rem;
+            position: relative;
+            top: 320px;
+
+
+            img{
+                height: 40px;
+                width: 40px;
+                cursor: pointer;
+                
+            }
+        }
+        
+    }
+    
+    .right{
+        display: grid;
+        grid-row: 1 / -1;
+        grid-template-rows: 1fr 1.3fr 1.7fr;
+        background-image: url(/intermediate_HTML_CSS/signUp_HTML_CSS_P1/assets/dota2map.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+
+        .top{
+            border-left:rgb(168, 16, 16) 3px ridge;
+            padding: 1.5rem; 
+
+            .question{
+                font-family: 'Amatic SC', cursive;
+                font-size: 3em;
+                font-weight: bold;
+            }
+
+            .text-body{
+                font-family: 'Roboto', sans-serif;
+                margin-top: 30px;
+            }
+            
+        }
+
+        .bottom{
+            border-left:rgb(168, 16, 16) 3px ridge;
+            padding: 1.5rem;
+
+            p{
+                font-family: 'Amatic SC', cursive;
+                font-size: 2em;
+                font-weight: bolder; 
+                text-shadow: rgb(168, 16, 16) 3px 3px 3px;
+                
+            }
+
+
+            .team-table > *{
+                border: white 2px solid;
+                margin-top: 1.5rem;
+
+                th{
+                    border:white 1px solid;
+                    font-family: 'Roboto', sans-serif; 
+                    font-weight: bold;
+                    padding: .5rem;
+                    color:rgb(197, 21, 21);
+                    text-shadow: black 1px 1px 1px; 
+                }
+
+                td{
+                    border: white 1px solid;
+                    font-family: 'Roboto', sans-serif;
+                    padding: .5rem; 
+                }
+            }
+        }
+        
+
+        .mid{
+            display: flex;
+            align-items: center;
+            padding-left: 3em;
+            background: rgba(54, 54, 54, 0.541);
+            border-left: white 3px ridge;
+            box-shadow: black 2px 2px 10px;
+            form{
+                display:flex;
+                gap: 100px;
+
+                div{
+                    display:flex;
+                    flex-direction: column;
+                }
+        
+                .form-left, .form-right{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                    font-size: 0.7rem;
+                    letter-spacing: 1.5px;
+                    font-family: 'Roboto', sans-serif;
+
+                    
+
+                }
+
+                label{
+                    margin-bottom: 8px;
+                    font-weight: bold;
+                    color: rgb(255, 255, 255);
+                    text-shadow: black 2px 2px 2px;
+                }
+
+                input{
+                    border-radius: 1.5em;
+                }
+               
+
+                button{
+                    width:150px;
+                    height: 30px;
+                    margin-top: 20px;
+                    background-color:rgba(168, 16, 16, 0.719);
+                    color: white;
+                    border: black 2px solid;
+                    border-radius: 1em;
+                    font-weight: bold;
+                    align-self: center;
+                    cursor: pointer;
+
+                    &:hover{
+                        transition: .3s;
+                        background-color:rgb(197, 21, 21);
+                        border-color: rgb(165, 165, 165);
+
+                    }
+            
+                }
+
+                img{
+                    width: 250px;
+                    height: 250px;
+                    align-self: center;
+                }
+            }
+        }
+    }
+}
+
+input[type="password"]{
+
+    &:focus{
+        border:white 1px inset;
+    }
+
+    &:invalid{    
+        
+        border-color: rgb(250, 71, 71);
+        box-shadow: rgb(145, 110, 110)(145, 110, 110) 1px 1px 2px;
+        
+    }
+}
+
+
+
+
+
